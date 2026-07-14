@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { tokenConfig } from "@/config/token";
 import { siteConfig } from "@/config/site";
-import { FeetIcon } from "./PixelIcons";
 import XLogo from "./XLogo";
 
 export default function Footer() {
@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-feet-navy text-feet-skylight">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
         <a href="#home" className="focus-pixel flex items-center gap-2">
-          <FeetIcon className="h-7 w-7" />
+          <Image src="/images/feet-pair.png" alt="" width={28} height={28} className="h-7 w-auto object-contain" unoptimized />
           <span className="pixel-heading text-[10px] text-feet-offwhite">{siteConfig.name}</span>
         </a>
 

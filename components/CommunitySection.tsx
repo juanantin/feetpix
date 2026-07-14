@@ -1,15 +1,14 @@
+import Image from "next/image";
 import { Send } from "lucide-react";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
 import XLogo from "./XLogo";
-import PixelArt from "./PixelArt";
-import { feetPairGrid, palette } from "@/lib/pixel-art";
 
 export default function CommunitySection() {
   return (
     <section className="border-b-2 border-feet-navy bg-feet-navy">
       <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 py-16 text-center sm:px-6 md:py-20">
-        <PixelArt grid={feetPairGrid} palette={palette.feet} title="FEETPIX feet" className="h-20 w-auto" />
+        <Image src="/images/feet-pair.png" alt="" width={80} height={80} className="h-20 w-auto object-contain" unoptimized />
         <h2 className="pixel-heading text-xl text-feet-offwhite sm:text-2xl">
           Join the FEETPIX Movement
         </h2>
