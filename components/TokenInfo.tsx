@@ -21,7 +21,7 @@ const fields: Array<{ label: string; value: string }> = [
 
 export default function TokenInfo() {
   return (
-    <section id="token" className="border-b-2 border-feet-navy bg-feet-sky pixel-grid-bg">
+    <section id="token" className="border-b-2 border-feet-navy bg-feet-sky">
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 md:py-24">
         <p className="text-center font-pixel text-[10px] uppercase tracking-widest text-feet-navyblue">
           Tokenomics

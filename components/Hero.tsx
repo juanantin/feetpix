@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
-import { CoinIcon } from "./PixelIcons";
 
 export default function Hero() {
   const reduceMotion = useReducedMotion();
@@ -78,14 +77,6 @@ export default function Hero() {
               <source src="/videos/feetpix-hero.mp4" type="video/mp4" />
             </video>
           </div>
-
-          <motion.div
-            className="absolute -left-2 top-6 w-12 sm:w-14"
-            animate={reduceMotion ? undefined : { y: [0, -10, 0] }}
-            transition={reduceMotion ? undefined : { duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <CoinIcon className="w-full drop-shadow-[3px_3px_0_rgba(16,27,61,0.25)]" />
-          </motion.div>
         </motion.div>
       </div>
     </section>

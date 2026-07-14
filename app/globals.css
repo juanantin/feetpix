@@ -42,12 +42,6 @@ body {
   color: var(--color-feet-navy);
 }
 
-.pixel-grid-bg {
-  background-image: linear-gradient(rgba(16, 27, 61, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(16, 27, 61, 0.06) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
 .pixel-heading {
   font-family: var(--font-pixel);
   line-height: 1.6;

@@ -4,7 +4,8 @@ import { useState } from "react";
 import { Menu, X as CloseIcon } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { tokenConfig } from "@/config/token";
-import { FeetIcon } from "./PixelIcons";
+import PixelArt from "./PixelArt";
+import { feetPairGrid, palette } from "@/lib/pixel-art";
 import PixelButton from "./PixelButton";
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b-2 border-feet-navy bg-feet-skylight/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <a href="#home" className="flex items-center gap-2 focus-pixel" onClick={() => setOpen(false)}>
-          <FeetIcon className="h-8 w-8 shrink-0" />
+          <PixelArt grid={feetPairGrid} palette={palette.feet} title="FEETPIX logo" className="h-9 w-auto shrink-0" />
           <span className="pixel-heading text-[11px] text-feet-navy sm:text-sm">{siteConfig.name}</span>
         </a>
 
