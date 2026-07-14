@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#8FCCED"/>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#101B3D" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <circle cx="960" cy="180" r="90" fill="#FFD42A" stroke="#101B3D" stroke-width="8"/>
+  <circle cx="935" cy="150" r="24" fill="#FFE873"/>
+  <text x="960" y="200" font-family="'Courier New', monospace" font-weight="700" font-size="72" fill="#101B3D" text-anchor="middle">$</text>
+
+  <text x="100" y="330" font-family="'Courier New', monospace" font-weight="700" font-size="96" fill="#101B3D" letter-spacing="4">$FEETPIX</text>
+  <text x="100" y="390" font-family="'Courier New', monospace" font-weight="600" font-size="28" fill="#123D71">
+    The legendary NFT collection returns onchain
+  </text>
+  <rect x="100" y="430" width="280" height="52" fill="#FFB51B" stroke="#101B3D" stroke-width="6"/>
+  <text x="240" y="464" font-family="'Courier New', monospace" font-weight="700" font-size="20" fill="#101B3D" text-anchor="middle">LIVE ON ROBINHOOD CHAIN</text>
+</svg>

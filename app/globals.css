@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-feet-sky: #8fcced;
+  --color-feet-skylight: #b9e4fa;
+  --color-feet-blue: #4f9cd3;
+  --color-feet-navyblue: #123d71;
+  --color-feet-navy: #101b3d;
+  --color-feet-skin: #f0b596;
+  --color-feet-skinlight: #ffd0ad;
+  --color-feet-coin: #ffd42a;
+  --color-feet-orange: #ffb51b;
+  --color-feet-green: #35c97a;
+  --color-feet-offwhite: #f8fbff;
+
+  --font-pixel: var(--font-press-start), monospace;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-feet-offwhite);
+  color: var(--color-feet-navy);
+  font-family: var(--font-body);
+}
+
+* {
+  border-color: var(--color-feet-navy);
+}
+
+::selection {
+  background: var(--color-feet-coin);
+  color: var(--color-feet-navy);
+}
+
+.pixel-grid-bg {
+  background-image: linear-gradient(rgba(16, 27, 61, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 27, 61, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.pixel-heading {
+  font-family: var(--font-pixel);
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.focus-pixel:focus-visible {
+  outline: 3px solid var(--color-feet-navy);
+  outline-offset: 3px;
+}
