@@ -22,7 +22,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-sky pixel-grid-bg">
+    <section id="home" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-sky">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:py-24">
         <div>
           <p className="font-pixel text-[10px] uppercase tracking-widest text-feet-navyblue">
