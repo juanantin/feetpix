@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
@@ -7,6 +8,18 @@ import { CoinIcon } from "./PixelIcons";
 
 export default function Hero() {
   const reduceMotion = useReducedMotion();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    // React's `muted` JSX prop doesn't reliably become the real HTML
+    // attribute in server-rendered markup, and browsers check that
+    // attribute before hydration JS runs to decide whether autoplay is
+    // allowed — so autoplay can silently fail without this.
+    video.muted = true;
+    video.play().catch(() => {});
+  }, []);
 
   return (
     <section id="home" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-sky pixel-grid-bg">
@@ -53,6 +66,7 @@ export default function Hero() {
         >
           <div className="w-full max-w-md border-2 border-feet-navy bg-feet-offwhite p-2 shadow-[6px_6px_0_0_rgba(16,27,61,0.25)]">
             <video
+              ref={videoRef}
               autoPlay
               muted
               loop
