@@ -3,9 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
-import PixelArt from "./PixelArt";
 import { CoinIcon } from "./PixelIcons";
-import { feetPairGrid, palette } from "@/lib/pixel-art";
 
 export default function Hero() {
   const reduceMotion = useReducedMotion();
@@ -53,12 +51,19 @@ export default function Hero() {
           animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <PixelArt
-            grid={feetPairGrid}
-            palette={palette.feet}
-            title="Pixel-art illustration of the FEETPIX feet"
-            className="w-full max-w-md drop-shadow-[6px_6px_0_rgba(16,27,61,0.25)]"
-          />
+          <div className="w-full max-w-md border-2 border-feet-navy bg-feet-offwhite p-2 shadow-[6px_6px_0_0_rgba(16,27,61,0.25)]">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="aspect-square w-full object-cover"
+            >
+              <source src="/videos/feetpix-hero.webm" type="video/webm" />
+              <source src="/videos/feetpix-hero.mp4" type="video/mp4" />
+            </video>
+          </div>
 
           <motion.div
             className="absolute -left-2 top-6 w-12 sm:w-14"
