@@ -29,7 +29,7 @@ export default function Hero() {
             The legend returns
           </p>
 
-          <h1 className="pixel-heading mt-4 text-4xl text-feet-navy sm:text-5xl md:text-6xl">
+          <h1 className="pixel-heading pixel-title-3d mt-4 text-4xl sm:text-5xl md:text-6xl">
             $FEETPIX
           </h1>
 

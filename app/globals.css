@@ -54,6 +54,25 @@ body {
   letter-spacing: 0.5px;
 }
 
+/* White-fill pixel wordmark with a navy stroke + blue 3D drop-shadow,
+   approximating the project's beveled logo treatment without an image. */
+.pixel-title-3d {
+  color: var(--color-feet-offwhite);
+  text-shadow:
+    -2px -2px 0 var(--color-feet-navy),
+    2px -2px 0 var(--color-feet-navy),
+    -2px 2px 0 var(--color-feet-navy),
+    2px 2px 0 var(--color-feet-navy),
+    0 -2px 0 var(--color-feet-navy),
+    0 2px 0 var(--color-feet-navy),
+    -2px 0 0 var(--color-feet-navy),
+    2px 0 0 var(--color-feet-navy),
+    4px 4px 0 var(--color-feet-blue),
+    5px 5px 0 var(--color-feet-blue),
+    6px 6px 0 var(--color-feet-blue),
+    7px 7px 0 var(--color-feet-blue);
+}
+
 .focus-pixel:focus-visible {
   outline: 3px solid var(--color-feet-navy);
   outline-offset: 3px;
