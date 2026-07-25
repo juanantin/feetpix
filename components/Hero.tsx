@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { Play } from "lucide-react";
 import { tokenConfig } from "@/config/token";
@@ -52,7 +53,7 @@ export default function Hero() {
 
           <p className="mt-5 max-w-md text-base text-feet-skylight sm:text-lg">
             The official token of the legendary{" "}
-            <strong className="text-feet-blue">FEETPIX NFT Collection</strong>.
+            <strong className="text-[#fcd0b1]">FEETPIX NFT Collection</strong>.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -69,10 +70,14 @@ export default function Hero() {
             </PixelButton>
           </div>
 
-          <div className="mt-7 inline-flex items-center gap-2 border-2 border-feet-green bg-feet-navy px-3 py-2 font-pixel text-[9px] uppercase text-feet-green">
-            <span className="h-2.5 w-2.5 shrink-0 bg-feet-green" aria-hidden="true" />
-            Live on {tokenConfig.chain}
-          </div>
+          <Image
+            src="/images/robinhood-badge.png"
+            alt={`Live on ${tokenConfig.chain}`}
+            width={221}
+            height={22}
+            className="mt-7 h-auto w-auto max-w-[260px]"
+            unoptimized
+          />
         </div>
 
         <motion.div
