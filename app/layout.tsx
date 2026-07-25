@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://feetpix.example"),
   title: "$FEETPIX — The Legendary NFT Collection Returns Onchain",
   description:
-    "The official $FEETPIX token relaunch of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
+    "The official $FEETPIX token of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
   openGraph: {
     title: "$FEETPIX — The Legendary NFT Collection Returns Onchain",
     description:
-      "The official $FEETPIX token relaunch of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
+      "The official $FEETPIX token of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
     type: "website",
     images: ["/images/social-preview.svg"],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "$FEETPIX — The Legendary NFT Collection Returns Onchain",
     description:
-      "The official $FEETPIX token relaunch of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
+      "The official $FEETPIX token of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
     images: ["/images/social-preview.svg"],
   },
 };

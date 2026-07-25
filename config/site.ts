@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "$FEETPIX",
   title: "$FEETPIX — The Legendary NFT Collection Returns Onchain",
   description:
-    "The official $FEETPIX token relaunch of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
+    "The official $FEETPIX token of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
   nav: [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
@@ -39,7 +39,7 @@ export const faqItems = [
   {
     question: "What is $FEETPIX?",
     answer:
-      "$FEETPIX is the token relaunch of the FEETPIX NFT collection — a way for the original community, and anyone new, to hold a piece of the project onchain.",
+      "$FEETPIX is the token of the FEETPIX NFT collection — a way for the original community, and anyone new, to hold a piece of the project onchain.",
   },
   {
     question: "Is this connected to the original FEETPIX NFT collection?",

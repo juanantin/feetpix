@@ -1,6 +1,6 @@
 # $FEETPIX
 
-Retro pixel-art landing page for $FEETPIX, the token relaunch of the FEETPIX NFT collection on Robinhood Chain.
+Retro pixel-art landing page for $FEETPIX, the token of the FEETPIX NFT collection on Robinhood Chain.
 
 Next.js 16 (App Router) + TypeScript + Tailwind CSS v4 + Framer Motion + Lucide icons.
 

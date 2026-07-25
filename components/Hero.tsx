@@ -33,7 +33,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-5 max-w-md text-base text-feet-navyblue sm:text-lg">
-            The official token relaunch of the legendary{" "}
+            The official token of the legendary{" "}
             <strong className="text-feet-navy">FEETPIX NFT Collection</strong>.
           </p>
 
