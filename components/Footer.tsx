@@ -2,11 +2,13 @@ import Image from "next/image";
 import { tokenConfig } from "@/config/token";
 import { siteConfig } from "@/config/site";
 import XLogo from "./XLogo";
+import Starfield from "./Starfield";
 
 export default function Footer() {
   return (
-    <footer className="bg-feet-navy text-feet-skylight">
-      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
+    <footer className="relative overflow-hidden bg-feet-navy text-feet-skylight">
+      <Starfield count={3} seed={7} />
+      <div className="relative z-10 mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
         <a href="#home" className="focus-pixel flex items-center gap-2">
           <Image src="/images/mascot.png" alt="" width={28} height={28} className="h-7 w-auto object-contain" unoptimized />
           <span className="pixel-heading text-[10px] text-feet-offwhite">{siteConfig.name}</span>
@@ -28,7 +30,7 @@ export default function Footer() {
         </nav>
       </div>
 
-      <div className="border-t border-feet-navyblue">
+      <div className="relative z-10 border-t border-feet-navyblue">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-[10px] uppercase tracking-wide text-feet-skylight/70 sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <span>© {new Date().getFullYear()} $FEETPIX. All rights reserved.</span>
           <span>Built on {tokenConfig.chain}</span>

@@ -2,6 +2,7 @@ import { ExternalLink } from "lucide-react";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
 import CopyContractButton from "./CopyContractButton";
+import Starfield from "./Starfield";
 
 function truncateAddress(address: string) {
   if (address.length <= 12) return address;
@@ -21,8 +22,9 @@ const fields: Array<{ label: string; value: string }> = [
 
 export default function TokenInfo() {
   return (
-    <section id="token" className="border-b-2 border-feet-navy bg-feet-navyblue">
-      <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6 md:py-24">
+    <section id="token" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navyblue">
+      <Starfield count={6} seed={4} />
+      <div className="relative z-10 mx-auto max-w-4xl px-4 py-16 sm:px-6 md:py-24">
         <p className="text-center font-pixel text-[10px] uppercase tracking-widest text-feet-blue">
           Tokenomics
         </p>

@@ -4,16 +4,7 @@ import { useEffect, useRef } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
-import Sparkle from "./Sparkle";
-
-const SPARKLES = [
-  { top: "10%", left: "6%", size: "h-3 w-3" },
-  { top: "22%", left: "42%", size: "h-2 w-2" },
-  { top: "8%", left: "78%", size: "h-3 w-3" },
-  { top: "60%", left: "3%", size: "h-2 w-2" },
-  { top: "72%", left: "48%", size: "h-2 w-2" },
-  { top: "45%", left: "92%", size: "h-3 w-3" },
-];
+import Starfield from "./Starfield";
 
 export default function Hero() {
   const reduceMotion = useReducedMotion();
@@ -32,11 +23,9 @@ export default function Hero() {
 
   return (
     <section id="home" className="hero-glow relative overflow-hidden border-b-2 border-feet-blue">
-      {SPARKLES.map((s, i) => (
-        <Sparkle key={i} className={`pixel-star pointer-events-none absolute ${s.size}`} style={{ top: s.top, left: s.left }} />
-      ))}
+      <Starfield count={14} seed={1} />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:py-24">
+      <div className="relative z-10 mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:py-24">
         <div>
           <p className="font-pixel text-[10px] uppercase tracking-widest text-feet-blue">
             The legend returns

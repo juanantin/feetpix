@@ -3,13 +3,15 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { faqItems } from "@/config/site";
+import Starfield from "./Starfield";
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="border-b-2 border-feet-navy bg-feet-navyblue">
-      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 md:py-24">
+    <section id="faq" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navyblue">
+      <Starfield count={5} seed={6} />
+      <div className="relative z-10 mx-auto max-w-3xl px-4 py-16 sm:px-6 md:py-24">
         <p className="text-center font-pixel text-[10px] uppercase tracking-widest text-feet-blue">FAQ</p>
         <h2 className="pixel-heading mt-4 text-center text-xl text-feet-offwhite sm:text-2xl">
           Frequently Asked Questions

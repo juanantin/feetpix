@@ -1,9 +1,11 @@
 import { tokenConfig } from "@/config/token";
+import Starfield from "./Starfield";
 
 export default function OriginsSection() {
   return (
-    <section id="origins" className="border-b-2 border-feet-navy bg-feet-navy">
-      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 md:py-24">
+    <section id="origins" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navy">
+      <Starfield count={6} seed={3} />
+      <div className="relative z-10 mx-auto max-w-3xl px-4 py-16 sm:px-6 md:py-24">
         <p className="font-pixel text-[10px] uppercase tracking-widest text-feet-blue">About &amp; Origins</p>
         <h2 className="pixel-heading mt-4 text-xl text-feet-offwhite sm:text-2xl">
           From NFT History to Onchain Legend
