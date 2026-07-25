@@ -2,7 +2,7 @@ import Image from "next/image";
 import { features } from "@/config/site";
 
 const iconMap = {
-  feet: "/images/feet-pair.png",
+  feet: "/images/mascot.png",
   coin: "/images/coin.png",
   chart: "/images/chart.png",
   trophy: "/images/trophy.png",

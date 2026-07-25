@@ -6,6 +6,7 @@
   --color-feet-blue: #4f9cd3;
   --color-feet-navyblue: #123d71;
   --color-feet-navy: #101b3d;
+  --color-feet-shadow: #060a18;
   --color-feet-skin: #f0b596;
   --color-feet-skinlight: #ffd0ad;
   --color-feet-coin: #ffd42a;
@@ -28,13 +29,26 @@ html {
 }
 
 body {
-  background: var(--color-feet-offwhite);
-  color: var(--color-feet-navy);
+  background: var(--color-feet-navy);
+  color: var(--color-feet-offwhite);
   font-family: var(--font-body);
 }
 
 * {
   border-color: var(--color-feet-navy);
+}
+
+/* Radial blue glow over the dark navy background, matching the mockup's hero treatment. */
+.hero-glow {
+  background:
+    radial-gradient(ellipse 70% 60% at 60% 40%, rgba(79, 156, 211, 0.45), transparent 70%),
+    var(--color-feet-navy);
+}
+
+/* Small four-point sparkle, positioned absolutely by the caller. */
+.pixel-star {
+  color: var(--color-feet-offwhite);
+  opacity: 0.85;
 }
 
 ::selection {
@@ -68,6 +82,6 @@ body {
 }
 
 .focus-pixel:focus-visible {
-  outline: 3px solid var(--color-feet-navy);
+  outline: 3px solid var(--color-feet-offwhite);
   outline-offset: 3px;
 }

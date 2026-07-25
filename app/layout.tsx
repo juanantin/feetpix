@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     description:
       "The official $FEETPIX token of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
     type: "website",
-    images: ["/images/social-preview.svg"],
+    images: ["/images/social-preview.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "$FEETPIX — The Legendary NFT Collection Returns Onchain",
     description:
       "The official $FEETPIX token of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
-    images: ["/images/social-preview.svg"],
+    images: ["/images/social-preview.png"],
   },
 };
 
