@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
+import { Play } from "lucide-react";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
 import Starfield from "./Starfield";
@@ -9,6 +10,7 @@ import Starfield from "./Starfield";
 export default function Hero() {
   const reduceMotion = useReducedMotion();
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [needsTapToPlay, setNeedsTapToPlay] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -18,8 +20,21 @@ export default function Hero() {
     // attribute before hydration JS runs to decide whether autoplay is
     // allowed — so autoplay can silently fail without this.
     video.muted = true;
-    video.play().catch(() => {});
+    video.play().catch(() => {
+      // Autoplay can be blocked outright regardless of attributes — e.g.
+      // iOS refuses ANY autoplay (even muted) under Low Power Mode, and
+      // some Android browsers block it under data-saver. No web code can
+      // override that, so fall back to a visible tap-to-play affordance
+      // instead of leaving a frozen/blank video.
+      setNeedsTapToPlay(true);
+    });
   }, []);
+
+  function handleTapToPlay() {
+    const video = videoRef.current;
+    if (!video) return;
+    video.play().then(() => setNeedsTapToPlay(false)).catch(() => {});
+  }
 
   return (
     <section id="home" className="hero-glow relative overflow-hidden border-b-2 border-feet-blue">
@@ -66,7 +81,7 @@ export default function Hero() {
           animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <div className="w-full max-w-md border-2 border-feet-blue bg-feet-navy p-2 shadow-[6px_6px_0_0_rgba(6,10,24,0.6)]">
+          <div className="relative w-full max-w-md border-2 border-feet-blue bg-feet-navy p-2 shadow-[6px_6px_0_0_rgba(6,10,24,0.6)]">
             <video
               ref={videoRef}
               autoPlay
@@ -74,11 +89,25 @@ export default function Hero() {
               loop
               playsInline
               preload="auto"
+              poster="/videos/feetpix-poster.jpg"
               className="aspect-square w-full object-cover"
             >
               <source src="/videos/feetpix-hero.webm" type="video/webm" />
               <source src="/videos/feetpix-hero.mp4" type="video/mp4" />
             </video>
+
+            {needsTapToPlay && (
+              <button
+                type="button"
+                onClick={handleTapToPlay}
+                aria-label="Play video"
+                className="focus-pixel absolute inset-2 flex items-center justify-center bg-feet-navy/40"
+              >
+                <span className="flex h-16 w-16 items-center justify-center border-2 border-feet-offwhite bg-feet-navy/80 text-feet-offwhite shadow-[4px_4px_0_0_#060A18]">
+                  <Play size={28} fill="currentColor" />
+                </span>
+              </button>
+            )}
           </div>
         </motion.div>
       </div>
