@@ -20,7 +20,7 @@ All editable project data lives in two files:
 - **`config/token.ts`** — token name, ticker, chain, supply, and every external link (buy, explorer, chart, OpenSea, X, X Community). Fields default to `""` when not yet available; the UI automatically shows a disabled/"coming soon" state for anything blank (see `TokenInfo.tsx`, `CommunitySection.tsx`, `Navbar.tsx`).
   - **Contract address**: set `contractAddress` once the token deploys. Until then it reads "Coming soon" and the copy button stays disabled.
   - **Buy link**: `buyUrl` — until set, the "Buy $FEETPIX" buttons scroll to the Token Info panel instead of linking out, so the site never implies the token is tradable before it is.
-- **`config/site.ts`** — nav links, the four feature-strip entries, and the FAQ question/answer array.
+- **`config/site.ts`** — nav links and the four feature-strip entries.
 
 ## Theme
 
@@ -46,8 +46,8 @@ These PNGs originally had opaque backgrounds (a gray vignette on three, plain wh
 ```
 app/            layout.tsx (fonts, SEO/OG metadata), page.tsx (section order), globals.css (theme),
                 icon.png (favicon)
-components/     Navbar, Hero, FeatureGrid, OriginsSection, TokenInfo, CopyContractButton,
-                CommunitySection, FAQ, Footer, PixelButton, Sparkle, XLogo
+components/     Navbar, Hero, TrailerSection, FeatureGrid, OriginsSection, TokenInfo,
+                CopyContractButton, CommunitySection, Footer, PixelButton, Sparkle, XLogo
 config/         token.ts, site.ts — all editable copy/links/data
 public/images/  mascot.png, trophy.png, coin.png, chart.png, social-preview.png
 public/videos/  hero video (mp4 + webm)

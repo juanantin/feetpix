@@ -9,7 +9,6 @@ export const siteConfig = {
     { label: "About", href: "#about" },
     { label: "Tokenomics", href: "#token" },
     { label: "Origins", href: "#origins" },
-    { label: "FAQ", href: "#faq" },
   ],
 };
 
@@ -33,32 +32,5 @@ export const features = [
     icon: "trophy" as const,
     title: "Long-Term Vision",
     body: "More than a meme. A piece of internet history.",
-  },
-];
-
-export const faqItems = [
-  {
-    question: "What is $FEETPIX?",
-    answer:
-      "$FEETPIX is the token of the FEETPIX NFT collection — a way for the original community, and anyone new, to hold a piece of the project onchain.",
-  },
-  {
-    question: "Is this connected to the original FEETPIX NFT collection?",
-    answer:
-      "Yes. $FEETPIX is built as a companion token to the original FEETPIX NFT collection, which you can browse on OpenSea.",
-  },
-  {
-    question: "What chain is $FEETPIX launching on?",
-    answer: "$FEETPIX is launching on Robinhood Chain.",
-  },
-  {
-    question: "Where can I buy the token?",
-    answer:
-      "The token has not launched yet. Buy links will be activated on this page the moment $FEETPIX goes live — don't trust any link claiming otherwise.",
-  },
-  {
-    question: "What is the official contract address?",
-    answer:
-      "Not deployed yet. The contract address will be published on this page and this page only once it's live — always verify before you trade.",
   },
 ];
