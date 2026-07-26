@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b-2 border-feet-blue bg-feet-navy/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <a href="#home" className="flex items-center gap-2 focus-pixel" onClick={() => setOpen(false)}>
-          <Image src="/images/mascot.png" alt="FEETPIX" width={36} height={36} className="h-9 w-auto shrink-0 object-contain" priority unoptimized />
+          <Image src="/images/mascot-animated.gif" alt="FEETPIX" width={36} height={36} className="h-9 w-auto shrink-0 object-contain" priority unoptimized />
           <span className="pixel-heading text-[11px] text-feet-offwhite sm:text-sm">{siteConfig.name}</span>
         </a>
 
