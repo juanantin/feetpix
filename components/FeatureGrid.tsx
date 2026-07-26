@@ -3,7 +3,7 @@ import { features } from "@/config/site";
 import Starfield from "./Starfield";
 
 const iconMap = {
-  feet: "/images/mascot.png",
+  feet: "/images/feet-icon.jpg",
   coin: "/images/coin.png",
   chart: "/images/chart.png",
   trophy: "/images/trophy.png",
