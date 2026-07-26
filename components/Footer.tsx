@@ -27,13 +27,6 @@ export default function Footer() {
           <span>Contract: {tokenConfig.contractAddress || "Coming soon"}</span>
         </nav>
       </div>
-
-      <div className="relative z-10 border-t border-feet-navyblue">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-[10px] uppercase tracking-wide text-feet-skylight/70 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <span>© {new Date().getFullYear()} $FEETPIX. All rights reserved.</span>
-          <span>Built on {tokenConfig.chain}</span>
-        </div>
-      </div>
     </footer>
   );
 }
