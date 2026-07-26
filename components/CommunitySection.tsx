@@ -7,7 +7,7 @@ import Starfield from "./Starfield";
 
 export default function CommunitySection() {
   return (
-    <section className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navy">
+    <section className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navyblue">
       <Starfield count={7} seed={5} />
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center gap-6 px-4 py-16 text-center sm:px-6 md:py-20">
         <Image src="/images/mascot-animated.gif" alt="" width={80} height={80} className="h-20 w-auto object-contain" unoptimized />

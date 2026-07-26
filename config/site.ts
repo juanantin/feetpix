@@ -5,6 +5,7 @@ export const siteConfig = {
     "The official $FEETPIX token of the legendary FEETPIX NFT Collection, now entering a new era on Robinhood Chain.",
   nav: [
     { label: "Home", href: "#home" },
+    { label: "Trailer", href: "#trailer" },
     { label: "About", href: "#about" },
     { label: "Tokenomics", href: "#token" },
     { label: "Origins", href: "#origins" },
