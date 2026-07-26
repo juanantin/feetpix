@@ -5,7 +5,6 @@ import FeatureGrid from "@/components/FeatureGrid";
 import OriginsSection from "@/components/OriginsSection";
 import TokenInfo from "@/components/TokenInfo";
 import CommunitySection from "@/components/CommunitySection";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
         <TokenInfo />
         <CommunitySection />
       </main>
-      <Footer />
     </>
   );
 }

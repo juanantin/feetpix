@@ -47,7 +47,7 @@ These PNGs originally had opaque backgrounds (a gray vignette on three, plain wh
 app/            layout.tsx (fonts, SEO/OG metadata), page.tsx (section order), globals.css (theme),
                 icon.png (favicon)
 components/     Navbar, Hero, TrailerSection, FeatureGrid, OriginsSection, TokenInfo,
-                CopyContractButton, CommunitySection, Footer, PixelButton, Sparkle, XLogo
+                CopyContractButton, CommunitySection, PixelButton, Sparkle, XLogo
 config/         token.ts, site.ts — all editable copy/links/data
 public/images/  mascot.png, trophy.png, coin.png, chart.png, social-preview.png
 public/videos/  hero video (mp4 + webm)
