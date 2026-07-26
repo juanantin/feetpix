@@ -11,7 +11,7 @@ const iconMap = {
 
 export default function FeatureGrid() {
   return (
-    <section className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navy">
+    <section className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navyblue">
       <Starfield count={5} seed={2} />
       <div className="relative z-10 mx-auto grid max-w-6xl grid-cols-1 gap-px bg-feet-navy sm:grid-cols-2 lg:grid-cols-4">
         {features.map((feature) => (
