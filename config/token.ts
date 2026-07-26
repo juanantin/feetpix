@@ -11,5 +11,6 @@ export const tokenConfig = {
   chartUrl: "",
   openseaUrl: "https://opensea.io/collection/feetpixwtf",
   twitterUrl: "https://x.com/FeetLabsHQ",
+  communityUrl: "https://x.com/i/communities/1933171337431830938",
   telegramUrl: "",
 };

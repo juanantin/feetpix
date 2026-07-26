@@ -21,6 +21,9 @@ export default function Footer() {
           <a href={tokenConfig.twitterUrl} target="_blank" rel="noopener noreferrer" className="focus-pixel inline-flex items-center gap-1.5 hover:text-feet-offwhite">
             <XLogo /> X
           </a>
+          <a href={tokenConfig.communityUrl} target="_blank" rel="noopener noreferrer" className="focus-pixel hover:text-feet-offwhite">
+            X Community
+          </a>
           {tokenConfig.telegramUrl && (
             <a href={tokenConfig.telegramUrl} target="_blank" rel="noopener noreferrer" className="focus-pixel hover:text-feet-offwhite">
               Telegram

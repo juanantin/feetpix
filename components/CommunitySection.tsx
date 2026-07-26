@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Send } from "lucide-react";
+import { Send, Users } from "lucide-react";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
 import XLogo from "./XLogo";
@@ -32,6 +32,9 @@ export default function CommunitySection() {
           )}
           <PixelButton as="a" href={tokenConfig.twitterUrl} variant="social" target="_blank" rel="noopener noreferrer">
             <XLogo /> Follow on X
+          </PixelButton>
+          <PixelButton as="a" href={tokenConfig.communityUrl} variant="social" target="_blank" rel="noopener noreferrer">
+            <Users size={14} /> X Community
           </PixelButton>
           <PixelButton as="a" href={tokenConfig.openseaUrl} variant="primary" target="_blank" rel="noopener noreferrer">
             View OpenSea
