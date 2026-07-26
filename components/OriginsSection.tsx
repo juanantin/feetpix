@@ -3,7 +3,7 @@ import Starfield from "./Starfield";
 
 export default function OriginsSection() {
   return (
-    <section id="origins" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navyblue">
+    <section id="origins" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navy">
       <Starfield count={6} seed={3} />
       <div className="relative z-10 mx-auto max-w-3xl px-4 py-16 sm:px-6 md:py-24">
         <p className="font-pixel text-[10px] uppercase tracking-widest text-feet-blue">About &amp; Origins</p>

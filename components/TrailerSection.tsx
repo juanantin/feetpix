@@ -2,7 +2,7 @@ import Starfield from "./Starfield";
 
 export default function TrailerSection() {
   return (
-    <section id="trailer" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navyblue">
+    <section id="trailer" className="relative overflow-hidden border-b-2 border-feet-navy bg-feet-navy">
       <Starfield count={6} seed={8} />
       <div className="relative z-10 mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 md:py-24">
         <p className="font-pixel text-[10px] uppercase tracking-widest text-feet-blue">Watch</p>

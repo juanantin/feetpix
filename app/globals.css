@@ -42,7 +42,7 @@ body {
 .hero-glow {
   background:
     radial-gradient(ellipse 70% 60% at 60% 40%, rgba(79, 156, 211, 0.45), transparent 70%),
-    var(--color-feet-navyblue);
+    var(--color-feet-navy);
 }
 
 /* Small four-point sparkle, positioned absolutely by the caller. Glitters via a
