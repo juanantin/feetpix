@@ -24,11 +24,6 @@ export default function Footer() {
           <a href={tokenConfig.communityUrl} target="_blank" rel="noopener noreferrer" className="focus-pixel hover:text-feet-offwhite">
             X Community
           </a>
-          {tokenConfig.telegramUrl && (
-            <a href={tokenConfig.telegramUrl} target="_blank" rel="noopener noreferrer" className="focus-pixel hover:text-feet-offwhite">
-              Telegram
-            </a>
-          )}
           <span>Contract: {tokenConfig.contractAddress || "Coming soon"}</span>
         </nav>
       </div>

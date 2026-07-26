@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Send, Users } from "lucide-react";
+import { Users } from "lucide-react";
 import { tokenConfig } from "@/config/token";
 import PixelButton from "./PixelButton";
 import XLogo from "./XLogo";
@@ -21,15 +21,6 @@ export default function CommunitySection() {
         </p>
 
         <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
-          {tokenConfig.telegramUrl ? (
-            <PixelButton as="a" href={tokenConfig.telegramUrl} variant="social" target="_blank" rel="noopener noreferrer">
-              <Send size={14} /> Join Telegram
-            </PixelButton>
-          ) : (
-            <PixelButton type="button" variant="social" disabled aria-label="Telegram not yet available">
-              <Send size={14} /> Join Telegram
-            </PixelButton>
-          )}
           <PixelButton as="a" href={tokenConfig.twitterUrl} variant="social" target="_blank" rel="noopener noreferrer">
             <XLogo /> Follow on X
           </PixelButton>
