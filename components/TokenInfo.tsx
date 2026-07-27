@@ -63,11 +63,6 @@ export default function TokenInfo() {
               </PixelButton>
             )}
           </div>
-
-          <p className="mt-6 text-center text-xs text-feet-skylight">
-            $FEETPIX is not yet tradable. This panel will activate live links the moment the
-            contract is deployed — always verify the address on this page before you trade.
-          </p>
         </div>
       </div>
     </section>
