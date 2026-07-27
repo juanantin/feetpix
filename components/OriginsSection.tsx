@@ -18,6 +18,34 @@ export default function OriginsSection() {
           Now the collection returns as $FEETPIX, bringing its original pixel identity into a
           new onchain era.
         </p>
+
+        <div className="mt-10 border-t-2 border-feet-navyblue pt-8">
+          <p className="font-pixel text-[10px] uppercase tracking-widest text-feet-blue">
+            To every FEETPIX NFT holder
+          </p>
+          <p className="mt-3 text-base leading-relaxed text-feet-skylight">
+            Thanks to EVM compatibility, we can finally make it happen.
+          </p>
+
+          <ul className="mt-6 flex flex-col gap-2">
+            <li className="flex items-center gap-3 text-base text-feet-offwhite">
+              <span className="h-2 w-2 shrink-0 rotate-45 bg-feet-blue" aria-hidden="true" />
+              A fresh beginning.
+            </li>
+            <li className="flex items-center gap-3 text-base text-feet-offwhite">
+              <span className="h-2 w-2 shrink-0 rotate-45 bg-feet-blue" aria-hidden="true" />
+              A strong community.
+            </li>
+            <li className="flex items-center gap-3 text-base text-feet-offwhite">
+              <span className="h-2 w-2 shrink-0 rotate-45 bg-feet-blue" aria-hidden="true" />
+              Same legendary feet.
+            </li>
+          </ul>
+
+          <p className="pixel-heading mt-8 text-lg text-feet-offwhite sm:text-xl">
+            $FEETPIX is coming back.
+          </p>
+        </div>
       </div>
     </section>
   );
