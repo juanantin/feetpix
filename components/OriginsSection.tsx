@@ -1,4 +1,3 @@
-import { tokenConfig } from "@/config/token";
 import Starfield from "./Starfield";
 
 export default function OriginsSection() {
@@ -19,25 +18,6 @@ export default function OriginsSection() {
           Now the collection returns as $FEETPIX, bringing its original pixel identity into a
           new onchain era.
         </p>
-
-        <div className="mt-8 flex flex-wrap gap-6 font-pixel text-[10px] uppercase text-feet-offwhite">
-          <a
-            href={tokenConfig.openseaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="focus-pixel border-b-2 border-feet-offwhite pb-1 hover:text-feet-blue"
-          >
-            Explore the original collection →
-          </a>
-          <a
-            href={tokenConfig.twitterUrl || "#"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="focus-pixel border-b-2 border-feet-offwhite pb-1 hover:text-feet-blue"
-          >
-            Join the community →
-          </a>
-        </div>
       </div>
     </section>
   );
